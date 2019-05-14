@@ -1,0 +1,14 @@
+{
+    "name": "moklidia/brain-games",
+    "type": "project",
+    "authors": [
+        {
+            "name": "moklidia",
+            "email": "kitsunegakkou@gmail.com"
+        }
+    ],
+    "require": {},
+    "bin": [
+    "bin/brain-games"
+  ]
+}
