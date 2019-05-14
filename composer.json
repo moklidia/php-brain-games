@@ -1,6 +1,6 @@
 {
     "name": "moklidia/brain-games",
-    "type": "project",
+    "type": "library",
     "authors": [
         {
             "name": "moklidia",
