@@ -7,6 +7,7 @@
             "email": "kitsunegakkou@gmail.com"
         }
     ],
+    "minimum-stability": "dev",
     "require": {},
     "bin": [
     "bin/brain-games"
