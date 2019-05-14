@@ -1,6 +1,6 @@
 install:
 	composer install
-phpcs:
-	./vendor/bin/phpcs src
-phpcbf:
-	./vendor/bin/phpcbf src
+lint:
+	composer run-script phpcs -- --standard=PSR12 src tests
+lint-fix:
+	composer run-script phpcbf -- --standard=PSR12 src bin 

@@ -11,11 +11,18 @@
         }
     ],
     "minimum-stability": "dev",
+    "scripts": {
+      "phpcs": "phpcs",
+      "phpcbf": "phpcbf"
+    },
     "require": {
         "wp-cli/php-cli-tools": "dev-master",
         "squizlabs/php_codesniffer": "^3.0@dev"
     },
     "autoload": {
+      "files": [
+        "src/Cli.php"
+      ],
       "psr-4": {
         "Brain\\games\\": "src"
       }
