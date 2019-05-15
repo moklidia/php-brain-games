@@ -1,7 +1,8 @@
 {
     "name": "moklidia/brain-games",
     "bin": [
-    "bin/brain-games"
+    "bin/brain-games",
+    "bin/brain-even"
     ],
     "type": "library",
     "authors": [
@@ -21,10 +22,8 @@
     },
     "autoload": {
       "files": [
-        "src/Cli.php"
-      ],
-      "psr-4": {
-        "Brain\\games\\": "src"
-      }
+        "src/Cli.php",
+        "src/Even.php"
+      ]
     }
 }
