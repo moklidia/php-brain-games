@@ -22,8 +22,10 @@
     },
     "autoload": {
       "files": [
-        "src/Cli.php",
-        "src/Even.php"
+        "src/Games/Cli.php",
+        "src/Games/Even.php",
+        "src/Games/Calc.php",
+        "src/Utils.php"
       ]
     }
 }

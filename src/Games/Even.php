@@ -1,8 +1,10 @@
 <?php
 
-namespace BrainGames\Even;
+namespace BrainGames\Games\Even;
 
 use function \cli\line;
+use function BrainGames\Utils\getRandNum;
+use function BrainGames\Utils\isEven;
 
 function playEven()
 {
@@ -26,13 +28,4 @@ function playEven()
         }
     }
     line("Congratulations, %s!", $name);
-}
-
-function getRandNum()
-{
-    return rand(1, 100);
-}
-function isEven($num)
-{
-    return $num % 2 === 0;
 }
