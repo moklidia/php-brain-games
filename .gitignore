@@ -1,1 +1,5 @@
 /vendor
+.phpintel/index
+.vscode/launch.json
+.DS_Store
+.phpintel/480f67b93021f519e7addef9998a19f5
