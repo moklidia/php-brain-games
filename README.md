@@ -17,6 +17,10 @@ Play brain-gcd
 
 <a href="https://asciinema.org/a/brmP6nO2GixhByYwOOFx7ZGnk" target="_blank"><img src="https://asciinema.org/a/brmP6nO2GixhByYwOOFx7ZGnk.svg" /></a>
 
+Play brain-progression
+
+<a href="https://asciinema.org/a/xUdLoqsJ3RX5PmWt2BvQVcS4m" target="_blank"><img src="https://asciinema.org/a/xUdLoqsJ3RX5PmWt2BvQVcS4m.svg" /></a>
+
 <a href="https://codeclimate.com/github/moklidia/project-lvl1-s500/maintainability"><img src="https://api.codeclimate.com/v1/badges/c8eb7808ea6f15216208/maintainability" /></a>
 
 [![Build Status](https://travis-ci.org/moklidia/project-lvl1-s500.svg?branch=master)](https://travis-ci.org/moklidia/project-lvl1-s500)
