@@ -5,7 +5,8 @@
     "bin/brain-even",
     "bin/brain-calc",
     "bin/brain-gcd",
-    "bin/brain-progression"
+    "bin/brain-progression",
+    "bin/brain-prime"
     ],
     "type": "library",
     "authors": [
@@ -31,7 +32,8 @@
         "src/Utils.php",
         "src/Games/Flow.php",
         "src/Games/Gcd.php",
-        "src/Games/Progression.php"
+        "src/Games/Progression.php",
+        "src/Games/Prime.php"
       ]
     }
 }
