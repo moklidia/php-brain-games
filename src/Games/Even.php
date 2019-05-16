@@ -22,6 +22,5 @@ function playEven()
         $rules['correct_answer'] = $correctAnswer;
         return $rules;
     };
-    playGame($task, $gameRules);
-    return;
+    return playGame($task, $gameRules);
 }
