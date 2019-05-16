@@ -4,7 +4,7 @@ namespace BrainGames\Games\Prime;
 
 use function BrainGames\Utils\getRandNum;
 
-use function BrainGames\Games\Flow\playGame;
+use function BrainGames\Flow\playGame;
 
 function isPrime($num)
 {

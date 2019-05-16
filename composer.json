@@ -1,7 +1,14 @@
 {
     "name": "moklidia/brain-games",
+    "description":"PHP Hexlet Project",
+    "authors": [
+        {
+            "name": "moklidia",
+            "email": "kitsunegakkou@gmail.com"
+        }
+    ],
+    "keywords": ["hexlet", "game", "console"],
     "bin": [
-    "bin/brain-games",
     "bin/brain-even",
     "bin/brain-calc",
     "bin/brain-gcd",
@@ -9,12 +16,7 @@
     "bin/brain-prime"
     ],
     "type": "library",
-    "authors": [
-        {
-            "name": "moklidia",
-            "email": "kitsunegakkou@gmail.com"
-        }
-    ],
+    
     "minimum-stability": "dev",
     "scripts": {
       "phpcs": "phpcs",
@@ -26,11 +28,10 @@
     },
     "autoload": {
       "files": [
-        "src/Games/Cli.php",
         "src/Games/Even.php",
         "src/Games/Calc.php",
         "src/Utils.php",
-        "src/Games/Flow.php",
+        "src/Flow.php",
         "src/Games/Gcd.php",
         "src/Games/Progression.php",
         "src/Games/Prime.php"

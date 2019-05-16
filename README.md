@@ -1,3 +1,7 @@
+<a href="https://codeclimate.com/github/moklidia/project-lvl1-s500/maintainability"><img src="https://api.codeclimate.com/v1/badges/c8eb7808ea6f15216208/maintainability" /></a>
+
+[![Build Status](https://travis-ci.org/moklidia/project-lvl1-s500.svg?branch=master)](https://travis-ci.org/moklidia/project-lvl1-s500)
+
 
 Install:
 
@@ -7,25 +11,20 @@ Install:
 Play brain-even:
 
 
-<a href="https://asciinema.org/a/wArglZd4g3ppWPvhJhhlBfkwD" target="_blank"><img src="https://asciinema.org/a/wArglZd4g3ppWPvhJhhlBfkwD.svg" /></a>
+<a href="https://asciinema.org/a/eCGNNyXoRAKXwIJuNg8E9Vcis" target="_blank"><img src="https://asciinema.org/a/eCGNNyXoRAKXwIJuNg8E9Vcis.svg" /></a>
 
 Play brain-calc:
 
-<a href="https://asciinema.org/a/2Y7rKfGuWg7dCP4Zk0VZNfyK2" target="_blank"><img src="https://asciinema.org/a/2Y7rKfGuWg7dCP4Zk0VZNfyK2.svg" /></a>
+<a href="https://asciinema.org/a/YzqEyFh4aUyr25t4Bew3t5TU4" target="_blank"><img src="https://asciinema.org/a/YzqEyFh4aUyr25t4Bew3t5TU4.svg" /></a>
 
 Play brain-gcd:
 
-<a href="https://asciinema.org/a/brmP6nO2GixhByYwOOFx7ZGnk" target="_blank"><img src="https://asciinema.org/a/brmP6nO2GixhByYwOOFx7ZGnk.svg" /></a>
+<a href="https://asciinema.org/a/KBxFWHQwybRoIMd0lnfTfUDIE" target="_blank"><img src="https://asciinema.org/a/KBxFWHQwybRoIMd0lnfTfUDIE.svg" /></a>
 
 Play brain-progression:
 
-<a href="https://asciinema.org/a/xUdLoqsJ3RX5PmWt2BvQVcS4m" target="_blank"><img src="https://asciinema.org/a/xUdLoqsJ3RX5PmWt2BvQVcS4m.svg" /></a>
+<a href="https://asciinema.org/a/RdEkfIY8DgqFV5318xBIXaB9I" target="_blank"><img src="https://asciinema.org/a/RdEkfIY8DgqFV5318xBIXaB9I.svg" /></a>
 
 Play brain-prime:
 
-<a href="https://asciinema.org/a/nb9AxLJPUNcXiibCjJjs38oG2" target="_blank"><img src="https://asciinema.org/a/nb9AxLJPUNcXiibCjJjs38oG2.svg" /></a>
-
-
-<a href="https://codeclimate.com/github/moklidia/project-lvl1-s500/maintainability"><img src="https://api.codeclimate.com/v1/badges/c8eb7808ea6f15216208/maintainability" /></a>
-
-[![Build Status](https://travis-ci.org/moklidia/project-lvl1-s500.svg?branch=master)](https://travis-ci.org/moklidia/project-lvl1-s500)
+<a href="https://asciinema.org/a/xdfzgEIWqYBjudEJFxLA8drdz" target="_blank"><img src="https://asciinema.org/a/xdfzgEIWqYBjudEJFxLA8drdz.svg" /></a>

@@ -4,7 +4,7 @@ namespace BrainGames\Games\Gcd;
 
 use function BrainGames\Utils\getRandNum;
 
-use function BrainGames\Games\Flow\playGame;
+use function BrainGames\Flow\playGame;
 
 function findGcd($num1, $num2)
 {

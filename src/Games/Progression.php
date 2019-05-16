@@ -2,7 +2,7 @@
 
 namespace BrainGames\Games\Progression;
 
-use function BrainGames\Games\Flow\playGame;
+use function BrainGames\Flow\playGame;
 use function BrainGames\Utils\getRandNum;
 
 function playProgression()
