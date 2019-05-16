@@ -18,7 +18,7 @@ function playGame(string $task, callable $getRules)
         $question = "Question: {$rules['question']}";
         $userAnswer = \cli\prompt($question);
         $correctAnswer = $rules['correct_answer'];
-        if ($userAnswer === $correctAnswer) {
+        if ($userAnswer == $correctAnswer) {
             line("Correct!");
         } else {
             print_r("'{$userAnswer}' is wrong asnwer ;(. Correct answer was '{$correctAnswer}'.");
