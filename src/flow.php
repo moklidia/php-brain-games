@@ -14,7 +14,7 @@ function playGame(string $task, callable $generateGameData)
     $name = \cli\prompt('May I have your name?');
     line("Hello, %s!", $name);
 
-    for ($i = 1; $i<= ROUNDS_COUNT; $i++) {
+    for ($i = 1; $i <= ROUNDS_COUNT; $i++) {
         $gameData = $generateGameData();
         $question = "Question: {$gameData[0]}";
         $userAnswer = prompt($question);
