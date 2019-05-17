@@ -1,23 +1,23 @@
 <?php
 
-namespace BrainGames\Flow;
+namespace BrainGames\flow;
 
 use function \cli\line;
 
-function playGame(string $task, callable $getRules)
+const ROUNDS_COUNT = 3;
+
+function playGame(string $task, callable $generateGameData)
 {
     line('Welcome to the Brain Game!');
     line('%s', $task);
     $name = \cli\prompt('May I have your name?');
     line("Hello, %s!", $name);
 
-    $rounds = 3;
-
-    for ($currRound = 1; $currRound <= $rounds; $currRound++) {
-        $rules = $getRules();
-        $question = "Question: {$rules['question']}";
+    for ($currRound = 1; $currRound <= ROUNDS_COUNT; $currRound++) {
+        $gameData = $generateGameData();
+        $question = "Question: {$gameData[0]}";
         $userAnswer = \cli\prompt($question);
-        $correctAnswer = $rules['correct_answer'];
+        $correctAnswer = $gameData[1];
         if ($userAnswer == $correctAnswer) {
             line("Correct!");
         } else {

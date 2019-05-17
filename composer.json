@@ -9,32 +9,30 @@
     ],
     "keywords": ["hexlet", "game", "console"],
     "bin": [
-    "bin/brain-even",
-    "bin/brain-calc",
-    "bin/brain-gcd",
-    "bin/brain-progression",
-    "bin/brain-prime"
+        "bin/brain-even",
+        "bin/brain-calc",
+        "bin/brain-gcd",
+        "bin/brain-progression",
+        "bin/brain-prime"
     ],
-    "type": "library",
-    
+    "type": "package", 
     "minimum-stability": "dev",
     "scripts": {
       "phpcs": "phpcs",
       "phpcbf": "phpcbf"
     },
-    "require": {
+    "require-dev": {
         "wp-cli/php-cli-tools": "dev-master",
         "squizlabs/php_codesniffer": "^3.0@dev"
     },
     "autoload": {
       "files": [
-        "src/Games/Even.php",
-        "src/Games/Calc.php",
-        "src/Utils.php",
-        "src/Flow.php",
-        "src/Games/Gcd.php",
-        "src/Games/Progression.php",
-        "src/Games/Prime.php"
+        "src/Games/even.php",
+        "src/Games/calc.php",
+        "src/flow.php",
+        "src/Games/gcd.php",
+        "src/Games/progression.php",
+        "src/Games/prime.php"
       ]
     }
 }

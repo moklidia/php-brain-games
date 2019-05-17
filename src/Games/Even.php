@@ -1,10 +1,10 @@
 <?php
 
-namespace BrainGames\Games\Even;
-
-use function BrainGames\Utils\getRandNum;
+namespace BrainGames\Games\even;
 
 use function BrainGames\Flow\playGame;
+
+const TASK = 'Answer "yes" if number even, otherwise answer "no"';
 
 function isEven($num)
 {
@@ -13,14 +13,13 @@ function isEven($num)
 
 function playEven()
 {
-    $task = 'Answer "yes" if number even, otherwise answer "no"';
-    $gameRules = function () {
-        $num = getRandNum();
-        $question = "Question: {$num}";
+    $generateGameData = function () {
+        $num = rand(1, 100);
+        $question = "{$num}";
         $correctAnswer = isEven($num) ? 'yes' : 'no';
-        $rules['question'] = $question;
-        $rules['correct_answer'] = $correctAnswer;
+        $rules[] = $question;
+        $rules[] = $correctAnswer;
         return $rules;
     };
-    return playGame($task, $gameRules);
+    return playGame(TASK, $generateGameData);
 }

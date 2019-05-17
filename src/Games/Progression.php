@@ -1,41 +1,29 @@
 <?php
 
-namespace BrainGames\Games\Progression;
+namespace BrainGames\Games\progression;
 
 use function BrainGames\Flow\playGame;
-use function BrainGames\Utils\getRandNum;
+
+const TASK = 'What number is missing in the progression?';
+const PROGRESSION_LENGTH = 10;
 
 function playProgression()
 {
-    $task = 'What number is missing in the progression?';
-
-    $gameRules = function () {
-        $progression = createProgression();
-        $missingKey = getRandKey($progression);
+    $generateGameData = function () {
+        $progression = [];
+        $start = rand(1, 100);
+        $step = rand(1, 10);
+        for ($i = 1; $i < PROGRESSION_LENGTH; $i++) {
+            $progression[] = $start + $i * $step;
+        }
+        $missingKey = array_rand($progression);
         $correctAnswer = $progression[$missingKey];
         $progression[$missingKey] = '..';
         $task = implode(' ', $progression);
-        $question = "Question: {$task}";
-        $rules['question'] = $question;
-        $rules['correct_answer'] = $correctAnswer;
-        return $rules;
+        $question = "{$task}";
+        $gameData[] = $question;
+        $gameData[] = $correctAnswer;
+        return $gameData;
     };
-    return playGame($task, $gameRules);
-}
-
-function createProgression()
-{
-    $length = 10;
-    $start = rand(1, 100);
-    $step = rand(1, 10);
-    $progression = [$start];
-    for ($i = 1; $i < $length; $i++) {
-        $progression[] = $start + $i * $step;
-    }
-    return $progression;
-}
-
-function getRandKey($array)
-{
-    return array_rand($array);
+    return playGame(TASK, $generateGameData);
 }

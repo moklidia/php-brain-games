@@ -1,20 +1,21 @@
 <?php
 
-namespace BrainGames\Games\Calc;
+namespace BrainGames\Games\calc;
 
-use function \cli\line;
-use function BrainGames\Utils\getRandNum;
 use function BrainGames\Flow\playGame;
+
+const TASK = 'What is the result of the expression?';
+
+const OPERATORS = ['+', '-', '*'];
 
 function playCalc()
 {
-    $task = 'What is the result of the expression?';
-    $gameRules = function () {
-        $operators = ['+', '-', '*'];
-        $num1 = getRandNum();
-        $num2 = getRandNum();
-        $operator = $operators[getRandOperator($operators)];
-        $question = "Question: {$num1} {$operator} {$num2}";
+    $generateGameData = function () {
+        $num1 = rand(1, 100);
+        $num2 = rand(1, 100);
+        $operator = OPERATORS[array_rand(OPERATORS)];
+        $question = "{$num1} {$operator} {$num2}";
+        $correctAnswer = 0;
         //finds correct answer depending on operator
         switch ($operator) {
             case '+':
@@ -24,16 +25,11 @@ function playCalc()
                 $correctAnswer = $num1 - $num2;
                 break;
             case '*':
-                 $correctAnswer = $num1 * $num2;
+                $correctAnswer = $num1 * $num2;
         }
-        $rules['question'] = $question;
-        $rules['correct_answer'] = $correctAnswer;
+        $rules[] = $question;
+        $rules[] = $correctAnswer;
         return $rules;
     };
-    return playGame($task, $gameRules);
-}
-
-function getRandOperator($operators)
-{
-    return array_rand($operators);
+    return playGame(TASK, $generateGameData);
 }

@@ -1,17 +1,17 @@
 <?php
 
-namespace BrainGames\Games\Prime;
+namespace BrainGames\Games\prime;
 
-use function BrainGames\Utils\getRandNum;
+use function BrainGames\flow\playGame;
 
-use function BrainGames\Flow\playGame;
+const TASK = 'Answer "yes" if number prime. Otherwise answer "no"';
 
 function isPrime($num)
 {
     if ($num < 2) {
         return false;
     }
-    for ($i = 2; $i < $num / 2; $i++) {
+    for ($i = 2; $i <= $num / 2; $i++) {
         if ($num % $i === 0) {
             return false;
         }
@@ -21,14 +21,13 @@ function isPrime($num)
 
 function playPrime()
 {
-    $task = 'Answer "yes" if number prime. Otherwise answer "no"';
-    $gameRules = function () {
-        $num = getRandNum();
-        $question = "Question: {$num}";
+    $generateGameData = function () {
+        $num = rand(1, 100);
+        $question = "{$num}";
         $correctAnswer = isPrime($num) ? 'yes' : 'no';
-        $rules['question'] = $question;
-        $rules['correct_answer'] = $correctAnswer;
+        $rules[] = $question;
+        $rules[] = $correctAnswer;
         return $rules;
     };
-    return playGame($task, $gameRules);
+    return playGame(TASK, $generateGameData);
 }

@@ -4,8 +4,9 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "67ed565b47d28c8fbe7cef61f3d410d5",
-    "packages": [
+    "content-hash": "01db5056d730c953afa5f46823a10e9e",
+    "packages": [],
+    "packages-dev": [
         {
             "name": "squizlabs/php_codesniffer",
             "version": "dev-master",
@@ -108,7 +109,6 @@
             "time": "2018-09-04T13:28:00+00:00"
         }
     ],
-    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
