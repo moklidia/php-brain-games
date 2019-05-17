@@ -18,9 +18,9 @@ function playGcd()
         $num2 = rand(1, 100);
         $question = "{$num1} {$num2}";
         $correctAnswer = findGcd($num1, $num2);
-        $rules[] = $question;
-        $rules[] = $correctAnswer;
-        return $rules;
+        $gameData[] = $question;
+        $gameData[] = $correctAnswer;
+        return $gameData;
     };
     return playGame(TASK, $generateGameData);
 }

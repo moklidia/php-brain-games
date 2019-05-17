@@ -25,9 +25,9 @@ function playPrime()
         $num = rand(1, 100);
         $question = "{$num}";
         $correctAnswer = isPrime($num) ? 'yes' : 'no';
-        $rules[] = $question;
-        $rules[] = $correctAnswer;
-        return $rules;
+        $gameData[] = $question;
+        $gameData[] = $correctAnswer;
+        return $gameData;
     };
     return playGame(TASK, $generateGameData);
 }

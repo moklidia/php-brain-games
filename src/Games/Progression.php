@@ -19,8 +19,8 @@ function playProgression()
         $missingKey = array_rand($progression);
         $correctAnswer = $progression[$missingKey];
         $progression[$missingKey] = '..';
-        $task = implode(' ', $progression);
-        $question = "{$task}";
+        $progressionToString = implode(' ', $progression);
+        $question = "{$progressionToString}";
         $gameData[] = $question;
         $gameData[] = $correctAnswer;
         return $gameData;

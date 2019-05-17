@@ -27,9 +27,9 @@ function playCalc()
             case '*':
                 $correctAnswer = $num1 * $num2;
         }
-        $rules[] = $question;
-        $rules[] = $correctAnswer;
-        return $rules;
+        $gameData[] = $question;
+        $gameData[] = $correctAnswer;
+        return $gameData;
     };
     return playGame(TASK, $generateGameData);
 }

@@ -17,9 +17,9 @@ function playEven()
         $num = rand(1, 100);
         $question = "{$num}";
         $correctAnswer = isEven($num) ? 'yes' : 'no';
-        $rules[] = $question;
-        $rules[] = $correctAnswer;
-        return $rules;
+        $gameData[] = $question;
+        $gameData[] = $correctAnswer;
+        return $gameData;
     };
     return playGame(TASK, $generateGameData);
 }
