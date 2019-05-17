@@ -3,6 +3,7 @@
 namespace BrainGames\flow;
 
 use function \cli\line;
+use function \cli\prompt;
 
 const ROUNDS_COUNT = 3;
 
@@ -16,7 +17,7 @@ function playGame(string $task, callable $generateGameData)
     for ($i = 1; $i<= ROUNDS_COUNT; $i++) {
         $gameData = $generateGameData();
         $question = "Question: {$gameData[0]}";
-        $userAnswer = \cli\prompt($question);
+        $userAnswer = prompt($question);
         $correctAnswer = $gameData[1];
         if ($userAnswer == $correctAnswer) {
             line("Correct!");
