@@ -11,15 +11,15 @@ function playGame(string $task, callable $generateGameData)
 {
     line('Welcome to the Brain Game!');
     line('%s', $task);
-    $name = \cli\prompt('May I have your name?');
+    $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
 
     for ($i = 1; $i <= ROUNDS_COUNT; $i++) {
         $gameData = $generateGameData();
-        $question = "Question: {$gameData[0]}";
+        [$questionData, $correctAnswer] = $gameData;
+        $question = "Question: {$questionData}";
         $userAnswer = prompt($question);
-        $correctAnswer = $gameData[1];
-        if ($userAnswer == $correctAnswer) {
+        if ($userAnswer === strval($correctAnswer)) {
             line("Correct!");
         } else {
             print_r("'{$userAnswer}' is wrong asnwer ;(. Correct answer was '{$correctAnswer}'.");

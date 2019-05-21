@@ -1,38 +1,43 @@
 {
-    "name": "moklidia/brain-games",
-    "description":"PHP Hexlet Project",
-    "authors": [
-        {
-            "name": "moklidia",
-            "email": "kitsunegakkou@gmail.com"
-        }
-    ],
-    "keywords": ["hexlet", "game", "console"],
-    "bin": [
-        "bin/brain-even",
-        "bin/brain-calc",
-        "bin/brain-gcd",
-        "bin/brain-progression",
-        "bin/brain-prime"
-    ],
-    "type": "package", 
-    "minimum-stability": "dev",
-    "scripts": {
-      "phpcs": "phpcs",
-      "phpcbf": "phpcbf"
-    },
-    "require-dev": {
-        "wp-cli/php-cli-tools": "dev-master",
-        "squizlabs/php_codesniffer": "^3.0@dev"
-    },
-    "autoload": {
-      "files": [
-        "src/Games/even.php",
-        "src/Games/calc.php",
-        "src/flow.php",
-        "src/Games/gcd.php",
-        "src/Games/progression.php",
-        "src/Games/prime.php"
-      ]
+  "name": "moklidia/brain-games",
+  "description": "PHP Hexlet Project",
+  "authors": [
+    {
+      "name": "moklidia",
+      "email": "kitsunegakkou@gmail.com"
     }
+  ],
+  "keywords": [
+    "hexlet",
+    "game",
+    "console"
+  ],
+  "bin": [
+    "bin/brain-even",
+    "bin/brain-calc",
+    "bin/brain-gcd",
+    "bin/brain-progression",
+    "bin/brain-prime"
+  ],
+  "type": "project",
+  "scripts": {
+    "phpcs": "phpcs",
+    "phpcbf": "phpcbf"
+  },
+  "require": {
+    "wp-cli/php-cli-tools": "dev-master"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.0@dev"
+  },
+  "autoload": {
+    "files": [
+      "src/games/even.php",
+      "src/games/calc.php",
+      "src/flow.php",
+      "src/games/gcd.php",
+      "src/games/progression.php",
+      "src/games/prime.php"
+    ]
+  }
 }
