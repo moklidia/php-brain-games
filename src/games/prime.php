@@ -22,9 +22,9 @@ function isPrime($num)
 function playPrime()
 {
     $generateGameData = function () {
-        $questionData = rand(1, 100);
-        $correctAnswer = isPrime($questionData) ? 'yes' : 'no';
-        return [$questionData, $correctAnswer];
+        $question = rand(1, 100);
+        $correctAnswer = isPrime($question) ? 'yes' : 'no';
+        return [$question, $correctAnswer];
     };
     return playGame(TASK, $generateGameData);
 }

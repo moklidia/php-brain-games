@@ -15,15 +15,13 @@ function playGame(string $task, callable $generateGameData)
     line("Hello, %s!", $name);
 
     for ($i = 1; $i <= ROUNDS_COUNT; $i++) {
-        $gameData = $generateGameData();
-        [$questionData, $correctAnswer] = $gameData;
-        $question = "Question: {$questionData}";
-        $userAnswer = prompt($question);
+        [$question, $correctAnswer] = $generateGameData();
+        $userAnswer = prompt("Question: {$question}");
         if ($userAnswer === strval($correctAnswer)) {
             line("Correct!");
         } else {
             print_r("'{$userAnswer}' is wrong asnwer ;(. Correct answer was '{$correctAnswer}'.");
-            print_r(" Lets' try again, {$name}!");
+            print_r("Lets' try again, {$name}!");
             return;
         }
     }

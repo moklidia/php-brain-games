@@ -14,9 +14,9 @@ function isEven($num)
 function playEven()
 {
     $generateGameData = function () {
-        $questionData = rand(1, 100);
-        $correctAnswer = isEven($questionData) ? 'yes' : 'no';
-        return [$questionData, $correctAnswer];
+        $question = rand(1, 100);
+        $correctAnswer = isEven($question) ? 'yes' : 'no';
+        return [$question, $correctAnswer];
     };
     return playGame(TASK, $generateGameData);
 }
